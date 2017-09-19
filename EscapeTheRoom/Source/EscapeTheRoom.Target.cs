@@ -9,6 +9,9 @@ public class EscapeTheRoomTarget : TargetRules
 	{
 		Type = TargetType.Game;
 
-		ExtraModuleNames.AddRange( new string[] { "EscapeTheRoom" } );
+        bUseUnityBuild = false;
+        bUsePCHFiles = false;
+
+        ExtraModuleNames.AddRange( new string[] { "EscapeTheRoom" } );
 	}
 }
